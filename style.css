@@ -1,0 +1,104 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: 1000px;
+  background-image: url("images/bg.jpeg");
+  background-position: center center;
+}
+
+.paper {
+  background-image: url("images/paper.jpg");
+  background-size: 500px;
+  background-position: center center;
+  padding: 20px 100px;
+  border-style: solid;
+  border-width: 8px;
+  border-color: aqua;
+  border-radius: 15%;
+/*  min-width: 800px; */
+  
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  
+  position: absolute;
+}
+
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.paper.image {
+  padding: 25px;
+  text-align: center;
+}
+
+.paper.image p {
+  font-size: 45px;
+}
+
+img {
+  max-height: 686px;
+  width: 463px;
+  user-select: none;
+  align-items: center;
+  border-radius: 10%;
+}
+
+.paper.heart::after {
+  content: "";
+  background-image: url("images/heart.jpg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+p {
+  font-family: 'Pacifico', normal;
+  font-size: 60px;
+  color: rgb(255, 0, 170);
+  opacity: 0.75;
+  user-select: none;
+  
+ /* filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9)); */
+}
+
+.Picture-note-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.Network {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.Network img {
+  width: 1.5rem;
+  aspect-ratio: 1 / 1;
+  vertical-align: middle;
+}
